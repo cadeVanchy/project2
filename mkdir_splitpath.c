@@ -45,7 +45,7 @@ void mkdir(char pathName[]){
             token = strtok(NULL, "/");
             checkNode = nodeSearch(root, token, checkNode->name);
         }
-        printf("ERROR: Directory %s already exists\n", path);
+        printf("ERROR: Directory %s does not exist\n", path);
         return;
     }
     // check if target directory already in current directoy
