@@ -50,7 +50,7 @@ void mkdir(char pathName[]){
     }
     // check if target directory already in current directoy
     if(nodeSearch(root, baseName, targetNode->name) != NULL){
-        printf("ERROR: Directory %s already exists\n", path);
+        printf("MKDIR ERROR: Directory %s already exists\n", path);
         return;
     }
     struct NODE* newNode = (struct NODE*)malloc(sizeof(struct NODE));
